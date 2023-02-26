@@ -85,11 +85,17 @@ body{
     .info h1{
         font-size: 40px;
     }
+    .social a{
+        margin:.8rem;
+    }
 }@media screen and (max-width:260px) {
     html{
         font-size: 5px;
     }
     .info h1{
         font-size: 30px;
+    }
+    .social a{
+        margin:.6rem;
     }
 }
