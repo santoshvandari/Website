@@ -28,6 +28,7 @@ body{
     width: 35rem;
     border-radius: 50%;
     border: 10px solid var(--white);
+    object-fit: contain;
 }
 .info h1{
     color: var(--lightaqua);
