@@ -1,0 +1,108 @@
+// Varibales
+$white: #fff;
+$grey:#2c3e50;
+$lightaqua:#c3f5ff;
+$darkwhite:#f8f9fa;
+// mixins
+@mixin flexcenter{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    transition: all linear .1s;
+    background: $grey;
+    @include flexcenter;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    .img{
+        img{
+        padding-top: 10px;
+        height: 35rem;
+        width: 35rem;
+        border-radius: 50%;
+        border: 10px solid $white;
+        object-fit: contain;
+        }
+    }
+    .info{
+        h1{
+            color: $lightaqua;
+            font-size: 5rem;
+            margin: 10px 0;
+            font-weight: 500;
+        }
+        h3{
+            height: 3rem;
+            color: $white;
+            font-size: 3rem;
+        }
+    }
+    .contact{
+        margin-top: 30px;
+        p{
+            font-size: 3rem;
+            color: $darkwhite;
+            margin: 10px 0;
+        }
+        .social{
+            @include flexcenter;
+            a{
+                height: 5rem;
+                width: 5rem;
+                margin: 1rem;
+                .bi{
+                    color: #fff;
+                    font-size: 4.5rem;
+                    cursor: pointer;
+                    &:hover{
+                        font-size: 2.8rem;
+                    }
+                    &:active{
+                        filter: opacity(0.5);
+                    }
+                }
+            }
+        }
+    }
+}
+/* Responsive Code */
+@media (max-width:360px) {
+    html{
+        font-size: 8px;
+        .info{
+            h1{
+                font-size: 40px;
+            }
+        }
+        .social{
+            a{
+                margin: 0.8rem;
+            }
+        }
+    }
+}
+@media (max-width:260px) {
+    html{
+        font-size: 5px;
+        .info{
+            h1{
+                font-size: 30px;
+            }
+        }
+        .social{
+            a{
+                margin: 0.6rem;
+            }
+        }
+    }
+}
