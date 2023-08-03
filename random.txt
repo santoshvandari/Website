@@ -16,4 +16,5 @@ Day 14 : 2020 July 30
 Day 15 : 2020 July 31
 Day 16 : 2020 August 1
 Day 17 : 2020 August 2
+Day 18 : 2020 August 3
 
